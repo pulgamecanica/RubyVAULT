@@ -1,0 +1,38 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+small.page_no {
+  float: right;
+  color: #ddd;
+
+}
+
+ul{
+  list-style:none;
+  padding: 25px;
+}
+a {
+ text-decoration: none;
+  font-size: 20px;
+  display:inline;
+  padding: 10px;
+  color:black;
+  border-radius: 8px;
+  }
+a.active{
+    background-color: #DCDCDC;
+}
+li {
+  display:inline;
+}

@@ -1,0 +1,27 @@
+body {
+ background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-6811.jpg);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-size: 100%;
+}
+
+.color {
+   background: rgba(6, 6, 15, 0.35)
+}
+.tittle{
+color: #0C0692 ;
+text-align: center;
+font-size: 200%
+}
+.date {
+  text-align: right;
+  font-size: 50%
+
+}
+.timeline {
+text-align: justify;
+}
+.phrase {
+ color: #273D3D;
+}

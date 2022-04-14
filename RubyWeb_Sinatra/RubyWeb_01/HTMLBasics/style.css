@@ -1,0 +1,27 @@
+.ol_table
+ {
+ text-align: left;
+ padding-left: 47%;
+}
+.table {  
+ padding-left: 33%;
+}
+body {
+    text-align:center;
+}
+h1   {
+  color: #34ACC4;
+  font-family: verdana;}
+#titulo_1{
+    color: #C511B9;
+    font-weight: bold;
+  }
+  .This_is_a_boolean{
+    color: #12C118;
+    font-size: 400%;
+  }
+  #table_id {
+    color: #F03131;
+    text-align: right;
+    font-size: 250%;
+  }

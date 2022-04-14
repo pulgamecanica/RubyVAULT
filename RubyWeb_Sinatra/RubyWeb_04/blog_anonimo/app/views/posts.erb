@@ -1,0 +1,95 @@
+<div class="post_editor">
+<% if @the_post%>
+      <p>This is the post editor</p>
+      <br>
+      <h1><%=@the_post.title%></h1>
+      <br>
+      <br>
+      <%tags = ""%>
+      <% counter = @the_post.tags.count%>
+      <% counter.times {|s| tags << @the_post.tags[s].name}%>
+    <p>Tags related<br>.-<%=tags%><br></p>
+      <br>
+      <%=@the_post.content%>
+<%end%>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+  <div class="col-md-10">
+    <div class="jumbotron">
+<h1>Editor</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4>Here you can update the post</h4>
+<form id="update" action="/update" method="post"name="formpost">
+<input type="hidden" name="post_id" value="<%=@the_post.id%>">
+<input id="title_update" class="form-control" type="text" name="title_update" placeholder="Title...">
+<input id="content_update" class="form-control" type="text" name="content_update" placeholder="Text...">
+<label for="post_tags">Tags:</label>
+<input id="post_tags" name="post[tags]" placeholder="tag1, tag2, otro tag, cuarto tag">
+<input id="update_botton" class="form-control" type="submit" value="Update">
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>If you want to delete the post write the name (of the post) and place sumbit</p>
+<form id="delete" action="/delete" method="post"name="formpost">
+<input type="hidden" name="post_id" value="<%=@the_post.id%>">
+<input id="searchpost" class="form-control" type="submit" value="Delete">
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>

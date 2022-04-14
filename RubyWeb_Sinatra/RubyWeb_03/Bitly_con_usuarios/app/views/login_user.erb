@@ -1,0 +1,48 @@
+ <div class="row">
+  <div class="col-md-12">
+    <div class="jumbotron">
+      <div class="user_background_1">
+        <h1> <p><center> This you profile </center></p></h1>
+          <div class="text-right">Date: <%=Time.now%></div>
+            <p>Hello <%= @user.name%></p>
+          <br>
+          <p>You are the user number <%=@user.id%></p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        <div id='parraf'>
+          <form id="forma_url" action="/user_urls" method="post" name="UserUrls">
+            <h4>Introduce your URL</h4>
+            <br>
+              <input id="text_id_user_login" type="text" name="user_input" value="paste your URL!">
+              <input id="boton" type="submit" value="Shorten it!">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="jumbotron">
+        <div class="user_background">
+          <p> This are all your ShortenedUrls's:</p>
+        <% if @urls_total_user%>
+        <% @urls_total_user.each_with_index do |x, index|%>
+        <br>
+        <%="*"*150%><br>
+        <%=index+1%>.-The short link is:<a target="_blank" href=" <%= x.id %> "> <%= x.short %> </a>...............................You have visited this site <%= x.visits%> times
+        <%end%>
+      <%end%>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+  <a href='/logout'>lOGoUT</a>
+
+

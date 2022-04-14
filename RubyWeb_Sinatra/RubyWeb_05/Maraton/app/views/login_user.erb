@@ -1,0 +1,35 @@
+<h1>Welcome to MaratonWeb</h1 >
+    <p><center>
+      <div align="right"> Date:<%=Time.now%></div>
+      <!--mostrar sesion con tiempo actual-->
+    </center></p>
+    <!-- mostrar nombre -->
+    <p>Hello <%= @user.name%>  </p>
+    <br>
+    <!-- mostrar id -->
+    <p>Now you can play maraton!!!</p>
+<h2>You can play with three diferent decks !!!</h2>
+<p>Choose your deck</p>
+<br>
+<br>
+<% if @cartaspro %>
+<% @cartaspro.each do |x|%>
+<br>
+<h1><%= x.name%></h1>
+<a href="/deck/<%=x.id%>">
+<img src="http://designyoutrust.com/wp-content/uploads/2014/08/aces-650x867.jpg" height="200" width="160"></a><a href="/deck/<%=x.id%>"><button type="button">Play!</button></a>
+<br>
+<%end%>
+<%end%>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3><a href='/stats/<%=@user.id%>'>Stats
+     </a></h3>
+<a href='/logout'>Close
+      </a>
+
+    

@@ -1,0 +1,28 @@
+.centerclass {  
+    text-align: center;
+}
+.rightclass{
+    text-align: right;
+    color: brown;
+}
+body {
+    text-align: left;
+    background-image: url(https://www.pets4homes.co.uk/images/articles/1756/large/the-evolution-of-the-horse-and-what-it-means-for-the-horse-owner-53a2908e63fc5.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.3em;
+    background-attachment: scroll;
+    background-size: cover;
+}
+h1   {
+  color: #34ACC4;
+  font-family: verdana;}
+#titulo_1{
+    color: #C511B9;
+    font-weight: bold;
+  }
+  
+.color {
+    background: rgba(6, 6, 15, 0.40)
+  }
+

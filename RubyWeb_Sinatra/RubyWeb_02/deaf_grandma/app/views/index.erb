@@ -1,0 +1,12 @@
+  <h1>Abuelita Sordita</h1>
+  <% if @abuelita %>
+    <p>Tu Abuelita dice: "<span id="grandma_says"><%= @abuelita %></span>"</p>
+  <% end %>
+<div id='parraf'>
+  <form id="forma" action="/abuelita" method="post" name="formName">
+    Dile algo a tu abuelita:
+    <br>
+    <input id="text_id" type="text" name="user_input">
+    <input id="boton" type="submit" value="Dilo!">
+</div>
+  </form>

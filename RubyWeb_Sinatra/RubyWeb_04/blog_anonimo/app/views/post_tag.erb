@@ -1,0 +1,19 @@
+<div class="post_image">
+<% if @show_post%>
+      <p>This are all the post`s related whith that tag</p>
+      <% @show_post.each do |x| %>
+      <br>
+      <%tags = " "%>
+      <% counter = x.tags.count%>
+      <% counter.times {|s| tags << x.tags[s].name}%>
+      <br>
+      <br>
+      <br>
+      <%="*"*160%><br>
+      <h1><%= x.title%></h1><p><br></p>
+      <%="^"*133%><br>
+      <p><%= x.content %></p>
+      <%="–"*112%><br>
+  <%end%>
+<%end%>
+</div>

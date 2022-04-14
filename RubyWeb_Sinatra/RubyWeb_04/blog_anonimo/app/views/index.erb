@@ -1,0 +1,80 @@
+<a target="_blank" href="http://www.codea.mx/assets/Logo_CodeaCamp.png">
+  <img src="http://www.codea.mx/assets/Logo_CodeaCamp.png"></img>
+</a>
+<div class="row">
+  <div class="col-md-10">
+    <div class="jumbotron">
+      <br>
+      <br>
+      <br>
+      <h1>Welcome to anonymous blog</h1>
+      <br>
+      <br>
+      <br> 
+      <br>
+      <br>
+      <br>
+      <br>
+        <form id="post" action="/newpost" method="post"name="formpost">
+          <div class="newpost">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="post">
+                <h3 class="text-left">You can post here</h3>
+                  <div class="input-group col-md-4 col-md-offset-4">
+                  <input id="yourposttitle" class="form-control" type="text" name="yourposttitle" placeholder="Title...">
+                  <input id="yourpost" class="form-control" type="text" name="yourpost" placeholder="Text...">
+                    <br>
+                    <br> 
+                    <br>
+                   <p>Select your tag/s<p>
+                  <label for="post_tags">Tags:</label>
+                  <input id="post_tags" name="post[tags]" placeholder="tag1, tag2, otro tag, cuarto tag">
+                  <input id="sendpost" class="form-control" type="submit" value="Send your anonymous post">
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div> 
+        </form>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+<h2>This are all the post`s</h2>
+<p>You can also select a tag if you have preferences</p>
+<!-- aqui van los tags  -->
+<form id="tags" action="/search_by_tag" method="get"name="formpost">
+   <input id="searchtag" class="form-control" type="text" name="searchtag" placeholder="Tag...">
+    <input id="sendtag6" class="form-control" type="submit" value="Go!">
+  </form>
+<p>Search/edit a post by his name(title)</p>
+<form id="search_edit" action="/search_edit" method="get"name="formpost">
+<input id="search_edit_post" class="form-control" type="text" name="search_edit_post" placeholder="Post name">
+<input id="searchpost" class="form-control" type="submit" value="Search post">
+</form>
+
+<% if @posts_total%>
+<% @posts_total.each_with_index do |x, index|%>
+<br>
+<%tags = " "%>
+<% counter = x.tags.count%>
+<% counter.times {|s| tags << x.tags[s].name}%>
+<br>
+<br>
+<br>
+<%="*"*160%><br>
+<h1><%= x.title%></h1><p>Tags related<br>.-<%=tags%><br></p>
+<%="^"*133%><br>
+<p><%= x.content %></p>
+<%="–"*112%><br>
+  <%end%>
+<%end%>
+    </div>
+  </div>
+</div>
+
+  

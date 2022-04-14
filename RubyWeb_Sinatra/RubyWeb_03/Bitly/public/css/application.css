@@ -1,0 +1,10 @@
+.container {
+  margin: 40px auto;
+  width: 1000px;
+  padding: 0px 100px 100px 100px;
+  border: 20px dotted purple;
+  background-color: aqua;
+}
+th {
+  text-align: left;
+}

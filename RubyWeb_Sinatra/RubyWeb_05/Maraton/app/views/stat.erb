@@ -1,0 +1,27 @@
+<h1>This are your Stats</h1>
+  <%@user_games.each do |x|%>
+  <%deck_name = x.deck %>
+  <%game_id = x.id%>
+  <%answers = x.stats%>
+  <%counter = x.stats.count%>
+  <h2>Stat from Game: <%=game_id%> and Deck: <%=deck_name.name%></h2>
+  <h3>Answers:<br></h3>
+  <%counter.times do |y|%>
+    <p><%=y+1%>.-<%=answers[y].answer.correct%>  <%if answers[y].answer.correct == false%>
+      (answer: <%=answers[y].answer.name%>)
+      <%end%>
+    <%end%></p>
+    <%answers_good = x.stats.where(correct: 0).count  %>
+    <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="<%= answers_good%>0" aria-valuemin="0" aria-valuemax="100" style="width: <%= answers_good%>0%;">
+    Correct: <%= answers_good%>0%
+  </div>
+</div>
+ <%end%>
+
+
+<div align="right"> <a href='/login'>Return</a></div>
+
+
+
+

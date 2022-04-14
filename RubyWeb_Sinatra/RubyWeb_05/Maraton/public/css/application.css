@@ -1,0 +1,15 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  background-image: url("http://a1.mzstatic.com/us/r30/Purple/v4/fc/62/43/fc62438f-8297-370f-0e55-66d083e519f9/screen568x568.jpeg");
+  color: white;
+  border-radius: 30px;
+  background-size: cover;
+}
+
+.jumbotron {
+  background-image: url("https://lh3.googleusercontent.com/mMlhysewL_rKk-A8mYtfEBCR-DVhY8RkDHrtq7lPXtl6nP1fXpAEpY3FqIVwGwLdIr0=w300");
+  margin-left: 20%;
+}

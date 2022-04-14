@@ -1,0 +1,68 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  background-color: grey;
+  color: white;
+  display: block;
+  width: 182px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+#uno, #dos, #tres, #cuatro
+{
+  background-color: white;
+}
+
+.pricing_features {
+  display: inline-block;
+  float: left;
+  width: 200px;
+  margin-left: 30px;
+}
+
+.pricing_features li {
+  list-style-type: square;
+}
+
+h5 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px 0;
+}
+
+.clear {
+  clear: both;
+}
+
+

@@ -1,0 +1,19 @@
+<h1>Find Anagrams!</h1>
+
+<% if @new_word %>
+  <p>This are the anagrams for '<%= @new_word %>':</p>
+  <p>All the anagrams</p>
+  <p> <% @canonical.each_with_index do |x| %> </p>
+  <p><%= x %></p>
+
+<% end %>
+<% end %>
+
+<% if Word.first != nil %>
+  <%= erb :partial, :layout => false %>
+<% end %>
+<br>
+<br>
+<br>
+<a href="/">Go back home</a>
+

@@ -1,0 +1,118 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  background-color: #999;
+  color: white;
+  display: block;
+  width: 182px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  top: 600px;
+  padding: 20px 0;
+}
+
+.jumbotron {
+  background-color: #DBDADA;
+  border-radius: 10px;
+}
+#dudas {
+    width: 95%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px  white;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    resize: both;
+}
+#telefono {
+    width: 95%;
+    height: 40px;
+    padding:  5px 20px;
+    box-sizing: border-box;
+    border: 2px  white;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    resize: none;
+}
+#registration_email {
+
+    width: 41%;
+    height: 40px;
+    padding: 3px 20px;
+    box-sizing: border-box;
+    border: 2px  white;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+    resize: none;
+
+}
+#registration_password {
+    width: 41%;
+    height: 40px;
+    padding: 3px 20px;
+    box-sizing: border-box;
+    border: 2px  white;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 0 px;
+    resize: none;
+
+}
+#registration_btn {
+  background-color: #2969D0;
+  border: 2px  white;
+  border-radius: 2px;
+  color: white;
+  width: 95%;
+  margin-left: 20px;
+  height: 40px;
+
+
+
+
+}

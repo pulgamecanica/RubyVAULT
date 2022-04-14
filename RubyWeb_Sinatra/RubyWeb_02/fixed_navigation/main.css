@@ -1,0 +1,48 @@
+.container {
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  float: left;
+  display: block;
+  margin: 0 auto;
+  padding-left: 550px;
+}
+nav {
+  float: top;
+  background-color: rgba(18, 22, 28, 0.52);
+  height: 50px;
+  text-align: right;
+  color: white;
+  margin-top: 0px;
+  position: fixed;
+  width: 100%;
+}
+ a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+ul{
+  padding-right: 570px;
+  list-style:none;
+  margin: 1;
+  word-spacing: 50px;
+
+
+} 
+li {
+  display:inline;
+  padding: 10px;
+}
+
+.content {
+    margin: 0 auto;
+  padding-top: 100px;
+    width: 768px;
+
+}

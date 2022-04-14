@@ -1,0 +1,26 @@
+<div class="the_class">
+  <h1>This is the <%=Deck.find(@deck_id).name%>Deck</h1>
+  <h4>Instructions:</h4>
+  <p>1.- Read all the questions</p>
+  <p>2.- Solve all the questions</p>
+  <p>3.- Send the questionnaire</p>
+  <br>
+  <br>
+  <br>
+  <% counter = Deck.find(@deck_id).questions%>
+  <% counter.each do |question| %>
+  <form action="/answers/<%= @game_id.id %>" method="post">
+    
+      <p> <%= question.question %> </p>
+      <% question.answers.each do |option| %>
+      <input type="radio" name="deck[<%=question.id%>]" value="<%= option.id %>"/>  <%= option.name %>
+      <br>
+      <% end %>   
+  <% end %> 
+  <input id="boton_answers" class="form-control" type="submit" value="Send">
+
+  </form>
+ 
+  <br>
+  <div align="right"> <a href='/login'>Return</a></div>
+</div>

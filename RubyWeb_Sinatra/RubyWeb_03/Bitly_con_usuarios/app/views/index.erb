@@ -1,0 +1,90 @@
+<br>
+<h1><center>Welcome to the codeacamp bitly</center></h1>
+<div id='parraf'>
+  <form id="forma_url" action="/urls" method="post" name="formName">
+    <h4>Introduce your URL</h4>
+    <br>
+    <input id="text_id" type="text" name="user_input" value="paste your URL!">
+    <input id="boton" type="submit" value="Shorten it!">
+</div>
+  </form>
+
+  <div class="row">
+  <div class="col-md-10">
+  <div class="jumbotron">
+   <p> This are all the ShortenedUrls:</p>
+<% if @urls_total%>
+<% @urls_total.each_with_index do |x, index|%>
+<br>
+<%="*"*150%><br>
+<%=index+1%>.-The short link is:<a target="_blank" href=" <%= x.id %> "> <%= x.short %> </a>...............................You have visited this site <%= x.visits%> times
+<%end%>
+<%end%>
+    </div>
+  </div>
+</div>
+
+<!-- **************************************************************** -->
+<h1>Welcome to Users  </h1>
+      <h4>Hello, SignUp, it's free!!!.</h4>
+<div id='parraf'>
+  <form id="forma" action="/users" method="post" name="formName">
+    
+    <br>
+<div class="row">
+  <div class="col-md-6">
+    <div class="jumbotron">
+     <div class="accaunt">
+      <h3 class="text-right">sIGNuP</h3>
+      <div class="input-group col-md-4 col-md-offset-4">
+        <input type="hidden" name="country" value="Norway">
+        <input id="name_id" class="form-control" type="text" name="user_name" placeholder="name" > 
+        <input id="email_id" class="form-control" type="text" name="user_email" placeholder="email" >
+        <input id="password_id" class="form-control" type="password" name="user_password" placeholder="password" >
+        <input id="boton_signup" class="form-control" type="submit" value="sIGNuP">
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+    </div>
+  </div>
+</div>
+</form>
+
+
+<form id="forma" action="/login" method="post"name="formName">
+<div class="login">
+<div class="row">
+  <div class="col-md-6">
+      <div class="accaunt">
+      <h3 class="text-left">lOGiN</h3>
+      <div class="input-group col-md-4 col-md-offset-4">
+        <input id="email_id_user" class="form-control" type="text" name="email" placeholder="email">
+        <input id="password_id_user" class="form-control" type="password" name="password" placeholder="password">
+        <input id="boton_sign_in" class="form-control" type="submit" value="lOGiN">
+      </div>
+      <br>
+      <br> 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    </div>
+</div>
+</form>
+</div>
+</div>
