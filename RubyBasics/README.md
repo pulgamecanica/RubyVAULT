@@ -27,8 +27,8 @@ bundle exec rspec *.rb
 | [Abuelita_sordita](Ruby_01/Abuelita_sordita.rb) | Input/Output handling |
 | [Dale_estilo_al_codigo](Ruby_01/Dale_estilo_al_codigo.rb) | Conditions and Hash |
 | [Diccionario](Ruby_01/Diccionario.rb) | Dictionaries |
-| [lee_el_error](Ruby_0/Lee_el_error.rb) | Errors |
-| [Utilizando_irb](Ruby_0/Utilizando_irb.rb) | irb log (irb usage example) |
+| [lee_el_error](Ruby_01/Lee_el_error.rb) | Errors |
+| [Utilizando_irb](Ruby_01/Utilizando_irb.rb) | irb log (irb usage example) |
 | [Los_enumerables_cobran_vida](Ruby_02/Los_enumerables_cobran_vida.rb) | RSpec testing |
 | [Metodos_destructivos](Ruby_02/Metodos_destructivos.rb) | Delete |
 | [Pig_latin](Ruby_02/Pig_latin.rb) | String manipulation |
